@@ -1,13 +1,14 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
-    <link href="bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Octagon Web Caclulator</title>
-</head>
+    <head>
+        <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+        <link href="bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Octagon Web Caclulator</title>
+    </head>
 <body>
     <div class="panel panel-info calc">
         <div class="panel-heading">
@@ -15,37 +16,35 @@
         </div>
         <div id="head">
             <input class="form-control" type="number" id="field" />
-            <div>
+            <div id="info">
                 <p>
-                    Action:
+                    <b>Action:</b>
                     <input class="lbs" type="text" id="action" disabled />
-                    Memory:
+                    <b>Memory:</b>
                     <input class="lbs" type="text" id="memory" disabled />
                 </p>
             </div>
         </div>
-        <div class="buttons">
-            <button class="btn btn-primary actions" value="+">+</button>
-            <button class="btn btn-primary  actions" value="-">-</button>
-            <button class="btn btn-primary  actions" value="*">*</button>
-            <button class="btn btn-primary  actions" value="/">/</button>
-            <button class="btn btn-primary  actions" value="^">^</button>
-            <button class="btn btn-primary  actions" value="root">√</button>
-            <button class="btn btn-primary  actions" value="+/-">+/-</button>
-            <button class="btn btn-success  actions" value="exec">=</button>
-            <button class="btn btn-danger" id="reset">C</button>
-            <button class="btn btn-danger" id="resetField">CE</button>
-            <p></p>
-            <button class="btn btn-info memoryActions" value="MR">MR</button>
-            <button class="btn btn-info memoryActions" value="MS">MS</button>
-            <button class="btn btn-info memoryActions" value="MC">MC</button>
-            <button class="btn btn-info memoryActions" value="M+">M+</button>
-            <button class="btn btn-info memoryActions" value="M-">M-</button>
-        </div><br />
-
-        <div class="buttons" id="num"></div>
+            <div class="buttons">
+                <button class="btn btn-primary actions" value="+">+</button>
+                <button class="btn btn-primary  actions" value="-">-</button>
+                <button class="btn btn-primary  actions" value="*">*</button>
+                <button class="btn btn-primary  actions" value="/">/</button>
+                <button class="btn btn-primary  actions" value="^">^</button>
+                <button class="btn btn-primary  actions" value="root">√</button>
+                <button class="btn btn-primary  actions" value="+/-">+/-</button>
+                <button class="btn btn-success  actions" value="exec">=</button>
+                <button class="btn btn-danger" id="reset">C</button>
+                <button class="btn btn-danger" id="resetField">CE</button>
+                <p></p>
+                <button class="btn btn-info memoryActions" value="MR">MR</button>
+                <button class="btn btn-info memoryActions" value="MS">MS</button>
+                <button class="btn btn-info memoryActions" value="MC">MC</button>
+                <button class="btn btn-info memoryActions" value="M+">M+</button>
+                <button class="btn btn-info memoryActions" value="M-">M-</button>
+            </div><br />
+            <div class="buttons" id="num"></div>
     </div>
-
     <script src="Scripts/OctagonCore.js"></script>
 </body>
 </html>
