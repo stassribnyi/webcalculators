@@ -1,30 +1,30 @@
-﻿#field {
+﻿.calc {
+    width: 30%;
+}
+#field {
     font: 150% sans-serif;
-    width: 25.5%;
 }
 #action {
     width: 2.5%;
-}
-
-#info > p {
-    font: 120% sans-serif;
 }
 .lbs {
     border: none;
     background: none;
 }
 
+#info > p {
+    font: 120% sans-serif;
+}
+
 div {
     margin: 5px;
 }
-.buttons {
-    width: 27%;
-}
+
 .buttons > input {
     margin: 1px;
-    width: 31%;
+    width: 32.6%;
 }
 .buttons > button {
     margin: 1px;
-    width: 17.5%;
+    width: 18.6%;
 }
