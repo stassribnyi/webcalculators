@@ -1,0 +1,23 @@
+c:\users\vlad\documents\visual studio 2012\Projects\Calculator\Calculator\bin\Calculator.dll
+c:\users\vlad\documents\visual studio 2012\Projects\Calculator\Calculator\bin\Calculator.pdb
+c:\users\vlad\documents\visual studio 2012\Projects\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+c:\users\vlad\documents\visual studio 2012\Projects\Calculator\Calculator\obj\Debug\Calculator.dll
+c:\users\vlad\documents\visual studio 2012\Projects\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\student\Desktop\Calculator\Calculator\bin\Calculator.dll.config
+C:\Users\student\Desktop\Calculator\Calculator\bin\Calculator.dll
+C:\Users\student\Desktop\Calculator\Calculator\bin\Calculator.pdb
+C:\Users\student\Desktop\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Calculator\Calculator\obj\Debug\Calculator.dll
+C:\Users\student\Desktop\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Stas\Desktop\Calculator\Calculator\bin\Calculator.dll.config
+C:\Users\Stas\Desktop\Calculator\Calculator\bin\Calculator.dll
+C:\Users\Stas\Desktop\Calculator\Calculator\bin\Calculator.pdb
+C:\Users\Stas\Desktop\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Stas\Desktop\Calculator\Calculator\obj\Debug\Calculator.dll
+C:\Users\Stas\Desktop\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\octagonweb\Calculator\bin\Calculator.dll.config
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\octagonweb\Calculator\bin\Calculator.dll
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\octagonweb\Calculator\bin\Calculator.pdb
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\octagonweb\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\octagonweb\Calculator\obj\Debug\Calculator.dll
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\octagonweb\Calculator\obj\Debug\Calculator.pdb
