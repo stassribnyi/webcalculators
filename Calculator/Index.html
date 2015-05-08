@@ -26,15 +26,15 @@
             </div>
         </div>
             <div class="buttons">
-                <button class="btn btn-primary actions" value="+">+</button>
-                <button class="btn btn-primary  actions" value="-">-</button>
-                <button class="btn btn-primary  actions" value="*">*</button>
-                <button class="btn btn-primary  actions" value="/">/</button>
-                <button class="btn btn-primary  actions" value="^">^</button>
-                <button class="btn btn-primary  actions" value="root">√</button>
-                <button class="btn btn-primary  actions" value="+/-">+/-</button>
-                <button class="btn btn-success  actions" value="exec">=</button>
-                <button class="btn btn-danger" id="reset">C</button>
+                <button class="btn btn-primary binaryActions" value="+">+</button>
+                <button class="btn btn-primary binaryActions" value="-">-</button>
+                <button class="btn btn-primary binaryActions" value="*">*</button>
+                <button class="btn btn-primary binaryActions" value="/">/</button>
+                <button class="btn btn-primary binaryActions" value="^">^</button>
+                <button class="btn btn-primary unaryActions" value="squareRoot">√</button>
+                <button class="btn btn-primary unaryActions" value="plusMinus">+/-</button>
+                <button class="btn btn-primary unaryActions" value="percent">%</button>
+                <button class="btn btn-danger" id="resetAll">C</button>
                 <button class="btn btn-danger" id="resetField">CE</button>
                 <p></p>
                 <button class="btn btn-info memoryActions" value="MR">MR</button>
@@ -42,9 +42,10 @@
                 <button class="btn btn-info memoryActions" value="MC">MC</button>
                 <button class="btn btn-info memoryActions" value="M+">M+</button>
                 <button class="btn btn-info memoryActions" value="M-">M-</button>
-            </div><br />
-            <div class="buttons" id="num"></div>
+            </div>
+        <div class="buttons" id="num"></div>
     </div>
     <script src="Scripts/OctagonCore.js"></script>
+
 </body>
 </html>

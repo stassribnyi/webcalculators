@@ -1,21 +1,31 @@
-﻿var _actions = document.getElementsByClassName('actions');
+﻿//definition of variables
+var _binaryActions = document.getElementsByClassName('binaryActions');
+var _unaryActions = document.getElementsByClassName('unaryActions');
 var _memoryActions = document.getElementsByClassName('memoryActions');
-var _reset = document.getElementById('reset');
-var _resetField = document.getElementById('resetField');
 var _field = document.getElementById('field');
 var _memory = document.getElementById('memory');
 var _action = document.getElementById('action');
+var _resetAll = document.getElementById('resetAll');
+var _resetField = document.getElementById('resetField');
 var _preValue = 0;
 
+//create instance of Calculator and Memory
 var _calculateObj = new Calculator();
 var _memoryObj = new Memory();
 
-function Reset() {
+//function that clear all data
+function ResetAll() {
     _field.value = 0;
     _preValue = 0;
     _action.value = "";
 }
 
+//function that clear field
+function ResetField() {
+    _field.value = 0;
+}
+
+//dinamic creation of number form
 function CreateNums() {
     var numButtons = document.getElementById("num");
 
@@ -29,9 +39,17 @@ function CreateNums() {
         });
         numButtons.appendChild(input);
     }
+
+    var execute = document.createElement('button');
+    execute.className = "btn btn-success";
+    execute.id = "execute";
+    execute.innerHTML = "=";
+    execute.addEventListener("click", BinaryHendler);
+    numButtons.appendChild(execute);
 }
 
-function Execute(a, action, b) {
+//select and exec operation
+function BinaryExecute(a, action, b) {
     switch (action) {
     case "+":
         return _calculateObj.Addition(a, b);
@@ -48,37 +66,30 @@ function Execute(a, action, b) {
     case "^":
         return _calculateObj.Power(a, b);
         break;
-        case "root":
-        return _calculateObj.ROOT(a, b);
-        break;
-    case "+/-":
-        return a * (-1);
-        break;
     default:
         break;
     }
 }
 
-function Action() {
-    if (this.value != "exec")
-        _action.value = this.value;
-    if (_preValue != 0) {
-        _field.value = Execute(_preValue, _action.value, _field.value);
-        _preValue = 0;
-
-    } else {
-        _preValue = _field.value;
-        _field.value = 0;
+//unary functions execute
+function UnaryExecute(a, action) {
+    switch (action) {
+        case "squareRoot":
+            return _calculateObj.SROOT(a);
+            break;
+        case "percent":
+            return _calculateObj.Percent(a);
+            break;
+        case "plusMinus":
+            return -a;
+            break;
+        default:
+            break;
     }
 }
 
-function appendAction(elements) {
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].addEventListener("click", Action);
-    }
-}
-
-function MemoryExec(action) {
+//memory functions execute
+function MemoryExecute(action) {
 
     switch (action) {
         case "MR":
@@ -99,28 +110,68 @@ function MemoryExec(action) {
     }
 }
 
-function MemoryHandler() {
-    MemoryExec(this.value);
+//hendler for unary functions
+function UnaryHandler() {
+    _field.value = UnaryExecute(_field.value, this.value);
 }
 
+//check data and run BinaryExecute
+function BinaryHendler() {
+    if (_preValue != 0) {
+        _field.value = BinaryExecute(_preValue, _action.value, _field.value);
+        _preValue = 0;
+        _action.value = "";
+    } else {
+        if (this.value != "") {
+            _preValue = _field.value;
+            _action.value = this.value;
+            _field.value = 0;
+        }
+    }
+}
+
+//handler for memory functions
+function MemoryHandler() {
+    MemoryExecute(this.value);
+}
+
+//add event for unary func
+function appendUnaryAction(elements) {
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener("click", UnaryHandler);
+    }
+}
+
+//add event for bin func
+function appendBinaryAction(elements) {
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener("click", BinaryHendler);
+    }
+}
+
+//add event for mem func
 function appendMemory(elements) {
     for (var i = 0; i < elements.length; i++) {
         elements[i].addEventListener("click", MemoryHandler);
     }
 }
 
-appendAction(_actions);
+//run adding events
+appendBinaryAction(_binaryActions);
+appendUnaryAction(_unaryActions);
 appendMemory(_memoryActions);
-Reset();
+
+//add event for special buttons
+_resetAll.addEventListener('click', ResetAll);
+_resetField.addEventListener('click', ResetField);
+
+//clear all
+ResetAll();
+
+//create num form
 CreateNums();
 
-_reset.addEventListener('click', Reset);
-_resetField.addEventListener('click', function() {
-    _field.value = 0;
-});
-
-
-//Memory&Calculator
+//Memory and Calculator
 function Memory() {
     _memory.value = 0;
 }
@@ -160,14 +211,20 @@ Calculator.prototype.Division = function (a, b) {
     if (b != 0) {
         var result = parseFloat(a) / parseFloat(b);
         return result;
+    } else {
+        alert("Division by zero!");
+        return 0;
     }
-    else return "Division by zero!";
 }
 Calculator.prototype.Power = function (a, b) {
     var result = Math.pow(parseFloat(a), parseFloat(b));
     return result;
 }
-Calculator.prototype.ROOT = function (a, b) {
-    var result = Math.pow(parseFloat(a), 1 / parseFloat(b));
+Calculator.prototype.SROOT = function (a) {
+    var result = Math.pow(parseFloat(a), 0.5);
+    return result;
+}
+Calculator.prototype.Percent = function (a) {
+    var result = parseFloat(_preValue) * (a / 100);
     return result;
 }
