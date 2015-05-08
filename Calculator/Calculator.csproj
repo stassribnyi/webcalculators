@@ -78,7 +78,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
     <Content Include="bootstrap-3.3.4-dist\css\bootstrap-theme.css.map" />
     <Content Include="bootstrap-3.3.4-dist\css\bootstrap.css.map" />
     <Content Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot" />

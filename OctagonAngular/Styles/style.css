@@ -1,0 +1,44 @@
+﻿.calc {
+    margin: 0 auto;
+    width: 30%;
+}
+
+#field {
+    font: 150% sans-serif;
+}
+
+#action {
+    width: 10%;
+}
+.lbs {
+    border: none;
+    background: none;
+    width: 20%
+}
+
+#info > p {
+    font: 120% sans-serif;
+}
+
+
+div {
+    margin: 5px;
+}
+
+.ctrl {
+    margin: 0 auto;
+}
+
+.buttons > input {
+    margin: 1px;
+    width: 32.5%;
+}
+
+.buttons > button {
+    margin: 1px;
+    width: 18.5%;
+}
+
+.buttons> #execute {
+    width: 65.5%;
+}
