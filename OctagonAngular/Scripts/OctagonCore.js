@@ -4,7 +4,7 @@ octagonCalc.controller('calcCtrl', function($scope, $rootScope) {
     $scope.preValue = null;
     $rootScope.resultField = 0;
     $scope.ClearAll = function() {
-        $scope.preValue = 0;
+        $scope.preValue = null;
         $rootScope.resultField = 0;
         $scope.currentAction = "";
     }
