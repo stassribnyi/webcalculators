@@ -1,0 +1,6 @@
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\OctagonAngular\bin\OctagonAngular.dll.config
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\OctagonAngular\bin\OctagonAngular.dll
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\OctagonAngular\bin\OctagonAngular.pdb
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\OctagonAngular\obj\Debug\OctagonAngular.csprojResolveAssemblyReference.cache
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\OctagonAngular\obj\Debug\OctagonAngular.dll
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\OctagonAngular\obj\Debug\OctagonAngular.pdb

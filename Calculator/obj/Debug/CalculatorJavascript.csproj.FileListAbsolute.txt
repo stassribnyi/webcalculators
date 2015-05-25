@@ -1,0 +1,5 @@
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\Calculator\bin\Calculator.dll.config
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\Calculator\bin\Calculator.dll
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\Calculator\bin\Calculator.pdb
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\Calculator\obj\Debug\Calculator.dll
+C:\Users\Stas\Documents\Visual Studio 2013\Projects\calculatorwebproject\Calculator\obj\Debug\Calculator.pdb
